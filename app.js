@@ -53,7 +53,7 @@ function calculate() {
     } catch (e) {
         if (e instanceof SyntaxError) {
             buffer = '';
-            screen.innerText = 'Invalid Syntax';
+            screen.innerText = '';
         }
     }
 }
