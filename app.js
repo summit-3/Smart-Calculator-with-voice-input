@@ -80,7 +80,7 @@ microphone.onclick = function () {
         "divide": "/",
         "divided": "/",
         "reminder": "%"
-    }
+    };
 
     recognition.onresult = function (event) {
         var input = event.results[0][0].transcript;
