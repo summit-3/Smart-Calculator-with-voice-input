@@ -2,14 +2,6 @@
   box-sizing: border-box;
   box-shadow: #636363;
 }
-@viewport{
-	zoom: 1.0;
-	width: extend-to-zoom;
-}
-@-ms-viewport{
-	width: extend-to-zoom;
-	zoom: 1.0;
-}	
 
 body {
   padding: 0;
@@ -17,22 +9,22 @@ body {
   display: flex;
   justify-content: center;
   align-content: space-around;
-  background-image: url('pic1.jpg');
+  /* background-image: url('pic1.jpg');
   background-size: 100% 110%;
   width: 75%;
   height: 90vh;
-  background-repeat: no-repeat;
-  /* background: #cc2b5e; /* fallback for old browsers 
+  background-repeat: no-repeat; */
+   background: #cc2b5e; 
   background: -webkit-linear-gradient(
     to right,
     #753a88,
     #cc2b5e
-  );  Chrome 10-25, Safari 5.1-6 
+  );  
   background: linear-gradient(
     to right,
     #753a88,
     #cc2b5e
-  ); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
   
 }
 
@@ -41,7 +33,7 @@ body {
   background-color: black;
   color: white;
   height: 10vh;
-  margin-left: 450px;
+  /* margin-left: 450px; */
 }
 
 .screen {
