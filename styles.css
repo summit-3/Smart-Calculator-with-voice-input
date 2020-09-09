@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  box-shadow: #636363;
+}
+
+body {
+  padding: 0;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  background-image: url('pic1.jpg');
+  background-size: 100% 110%;
+  width: 75%;
+  height: 90vh;
+  background-repeat: no-repeat;
+  /* background: #cc2b5e; /* fallback for old browsers 
+  background: -webkit-linear-gradient(
+    to right,
+    #753a88,
+    #cc2b5e
+  );  Chrome 10-25, Safari 5.1-6 
+  background: linear-gradient(
+    to right,
+    #753a88,
+    #cc2b5e
+  ); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.calc {
+  width: 450px;
+  background-color: black;
+  color: white;
+  height: 10vh;
+  margin-left: 450px;
+}
+
+.screen {
+  font-size: 2em;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  padding: 25px 15px;
+  height: 10vh; 
+  /* width: 250px;
+  height: 120px; */
+  /* float: left; */
+}
+.microphone{
+  height: 30px;
+  width: 30px;
+  background-image: url("mic.png");
+  background-size: 100%;
+  margin-left: 20px;
+  margin-top: 20px;
+  display: inline-block;
+}
+@Keyframes microphone-animation{
+	0%{
+		transform: scale(0.9);
+	}
+	70%{
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0,148,255,0.4);
+		
+	}
+	100%{
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 rgba(0,148,255,0);
+	}
+}
+.record{	
+	animation: microphone-animation 1.5s infinite;
+}
+.tooltip{
+	width: 200px;
+	font-size: 15px;
+	position: absolute;
+	background-color: #dddddd;
+	color: #636363;
+	padding: 10px;
+	top: 45px;
+	transform: translateX(50px);
+	border-radius: 5px;
+	visibility: hidden;
+}
+.tooltip::before{
+	content: '';
+	position: absolute;
+	border-width: 5px;
+	border-style: solid;
+	border-color:transparent #dddddd transparent transparent;
+	left: 0;
+	margin-left: -10px;
+}
+.microphone:hover .tooltip{
+	visibility: visible;
+}
+
+.calc-button {
+  background-color: #d8d9db;
+  color: black;
+  height: 75px;
+  width: 24.5%;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.calc-row {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  margin-bottom: 0.5%;
+}
+
+.double {
+  width: 49.7%;
+}
+
+.triple {
+  width: 74.85%;
+}
+
+.calc-button:hover {
+  background-color: #dfdddd;
+}
+.calc-button:active {
+  background-color: #a5a9b1;
+}
+.calc-button:last-child {
+  background-color: #276082;
+  color: white;
+}
+
+.calc-button:last-child:hover {
+  background-color: #3e92c4;
+}

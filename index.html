@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <div class="calc">
+        <section class="screen">
+            
+        </section>
+        <section class="calc-buttons">
+            <div class="calc-row">
+                <button class="calc-button double">C</button>
+                <button class="calc-button">←</button>
+                <button class="calc-button">/</button>
+            </div>
+            <div class="calc-row">
+                <button class="calc-button">7</button>
+                <button class="calc-button">8</button>
+                <button class="calc-button">9</button>
+                <button class="calc-button">*</button>
+            </div>
+            <div class="calc-row">
+                <button class="calc-button">4</button> 
+                <button class="calc-button">5</button>
+                <button class="calc-button">6</button>
+                <button class="calc-button">-</button>
+            </div>
+            <div class="calc-row">
+                <button class="calc-button">1</button>
+                <button class="calc-button">2</button>
+                <button class="calc-button">3</button>
+                <button class="calc-button">+</button>
+            </div>
+            <div class="calc-row">
+                <button class="calc-button triple">0</button>
+                <button class="calc-button" id="equalTo">=</button>
+            </div>
+        </section>
+    </div>
+    <div class="microphone">
+        <span class="tooltip">Operations are plus, minus, multiply, divide &amp; reminder
+            The user input format is number + operation + number<br><br>
+            Eg: 2 multiply 5 will be 2 &times 5
+        </span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
