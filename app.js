@@ -100,7 +100,7 @@ microphone.onclick = function () {
         }
         catch (e) {
             console.log(e);
-            document.querySelector('.screen').innerText = "Please Speak Again!";
+            document.querySelector('.screen').innerText = "";
         }
     }
 
